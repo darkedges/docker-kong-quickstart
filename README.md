@@ -3,7 +3,13 @@
 ## Init
 
 ```console
-docker compose up
+docker compose --profile init up -d
+```
+
+### Terraform update
+
+```console
+docker compose up terraform 
 ```
 
 ## Access Admin UI

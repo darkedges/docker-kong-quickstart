@@ -91,6 +91,8 @@ services:
     depends_on:
       kong:
         condition: service_healthy
+    profiles:
+      - init
   kong:
     container_name: dkq-kong
     image: "${KONG_DOCKER_TAG:-dqk/kong:latest}"
